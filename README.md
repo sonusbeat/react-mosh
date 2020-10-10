@@ -7,3 +7,4 @@
 3. Create Component
 4. Adding Children
 5. Embedding Expressions
+6. Setting Attributes
