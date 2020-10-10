@@ -1,30 +1,27 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Counter extends Component {
-    state = {
-        count: 0,
-        imageUrl: "https://picsum.photos/200"
-    };
+	state = { count: 0 };
 
-    styles = {
-        fontSize: 50,
-        fontWeight: "bold"
-    };
+	render() {
+		return (
+			<div>
+				<span className={this.getBadgeClasses()}>{this.formatCount()}</span>
+				<button className="btn btn-secondary btn-sm">Increment</button>
+			</div>
+		);
+	}
 
-    render() { 
-        return (
-            <React.Fragment>
-                <div><img src={ this.state.imageUrl } alt="Beautiful Image"/></div>
-                <span style={ this.styles } className="badge badge-primary m-2">{ this.formatCount() }</span>
-                <button style={{ fontSize: 50, margin: 20 }} className="btn btn-secondary btn-sm">Increment</button>
-            </React.Fragment>
-        );
-    }
+	getBadgeClasses() {
+		let classes = "badge m-2 badge-";
+		classes += this.state.count === 0 ? "warning" : "primary";
+		return classes;
+	}
 
-    formatCount() {
-        const {count} = this.state;
-        return count === 0 ? 'Zero' : count;
-    }
+	formatCount() {
+		const { count } = this.state;
+		return count === 0 ? "Zero" : count;
+	}
 }
- 
+
 export default Counter;
