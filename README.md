@@ -11,3 +11,4 @@
 7. Rendering Classes Dynamically
 8. Rendering Lists
 9. Conditional Rendering
+10. Handling Events
