@@ -12,3 +12,4 @@
 8. Rendering Lists
 9. Conditional Rendering
 10. Handling Events
+11. Bind Event Handlers

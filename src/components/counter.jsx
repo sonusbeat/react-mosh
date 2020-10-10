@@ -1,13 +1,21 @@
 import React, { Component } from "react";
 
 class Counter extends Component {
-	state = {
-		count: 0,
-		// tags: ["tag1", "tag2", "tag3"],
-		tags: []
-	};
+	state = {count: 0};
 
-	handleIncrement() {
+	// constructor() {
+	// 	super();
+	// 	this.handleIncrement = this.handleIncrement.bind(this);
+	// }
+
+	handleIncrement = () => {
+		// Returns a reference for the object
+		// object.method();
+
+		// is "strict mode" is enabled returns undefined
+		// because points to the global object or window object
+		// function();
+
 		console.log("Increment Clicked", this);
 	}
 
