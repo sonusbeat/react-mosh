@@ -13,4 +13,5 @@
 9. Conditional Rendering
 10. Handling Events
 11. Bind Event Handlers
-12. Updating the state
+12. Updating the State
+13. Passing Events Arguments
