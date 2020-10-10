@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-// import App from "./App";
+import "bootstrap/dist/css/bootstrap.min.css";
 import * as serviceWorker from "./serviceWorker";
 
 // ReactDOM.render(
@@ -11,7 +10,7 @@ import * as serviceWorker from "./serviceWorker";
 //   document.getElementById('root')
 // );
 
-const element = <h1>Hello World</h1>;
+const element = <h1 className="text-center text-info">Hello World</h1>; // JSX
 
 ReactDOM.render(element, document.getElementById("root"));
 
