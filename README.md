@@ -6,3 +6,4 @@
 2. Install Bootstrap
 3. Create Component
 4. Adding Children
+5. Embedding Expressions
