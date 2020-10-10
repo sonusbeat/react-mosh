@@ -3,20 +3,8 @@ import React, { Component } from "react";
 class Counter extends Component {
 	state = {count: 0};
 
-	// constructor() {
-	// 	super();
-	// 	this.handleIncrement = this.handleIncrement.bind(this);
-	// }
-
 	handleIncrement = () => {
-		// Returns a reference for the object
-		// object.method();
-
-		// is "strict mode" is enabled returns undefined
-		// because points to the global object or window object
-		// function();
-
-		console.log("Increment Clicked", this);
+		this.setState({ count: this.state.count + 1 });
 	}
 
 	render() {
