@@ -27,3 +27,4 @@
 21. Multiple Components in Sync
 22. Lifting the State Up
 23. Stateless Function Component
+24. Destructuring Arguments
