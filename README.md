@@ -26,3 +26,4 @@
 20. Removing the local state
 21. Multiple Components in Sync
 22. Lifting the State Up
+23. Stateless Function Component
