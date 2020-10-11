@@ -29,4 +29,8 @@
 22. Lifting the State Up
 23. Stateless Function Component
 24. Destructuring Arguments
+
+### Lifecycle Hooks
+
 25. Mounting Phase
+26. Updating Phase
