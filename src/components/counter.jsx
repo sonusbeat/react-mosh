@@ -3,13 +3,19 @@ import React, { Component } from "react";
 class Counter extends Component {
 
   componentDidUpdate(prevProps, prevState) {
+    console.log('########### Updated - Phase ###########');
     console.log('prevProps:', prevProps);
     console.log('prevState:', prevState);
+    console.log('-'.repeat(45));
 
     if (prevProps.counter.value !== this.props.counter.value) {
       // Ajax call and get data from the server
       console.log('Fetching Ajax Request');
     }
+  }
+
+  componentWillUnmount() {
+    console.log('Counter - Unmounted');
   }
 
   render() {
