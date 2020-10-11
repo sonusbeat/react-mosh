@@ -23,3 +23,4 @@
 17. Raising and Handling Events
 18. Updating the state
 19. Single Source of Truth
+20. Removing the local state
