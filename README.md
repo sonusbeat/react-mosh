@@ -17,6 +17,7 @@
 13. Passing Events Arguments
 
 ## Composing Components
+
 14. Composing Components
 15. Passing Data to Components
 16. Passing Children to Components
@@ -28,3 +29,4 @@
 22. Lifting the State Up
 23. Stateless Function Component
 24. Destructuring Arguments
+25. Mounting Phase

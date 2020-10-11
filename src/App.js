@@ -12,6 +12,17 @@ class App extends Component {
     ],
   };
 
+
+  constructor() {
+    super();
+    console.log('App - Constructor');
+  }
+
+  componentDidMount() {
+    // Ajax Call
+    console.log('App - Mounted');
+  }
+
   handleReset = () => {
     const counters = this.state.counters.map(c => {
       c.value = 0;
@@ -35,8 +46,10 @@ class App extends Component {
   };
 
   render() {
+    console.log('App - Rendered');
+    
     return (
-      <React.Fragment>
+      <>
         <NavBar
           totalCounters={this.state.counters.filter(c => {
             return c.value > 0;
@@ -51,7 +64,7 @@ class App extends Component {
             onDelete={this.handleDelete}
           />
         </main>
-      </React.Fragment>
+      </>
     );
   }
 }
