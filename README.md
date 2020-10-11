@@ -16,7 +16,8 @@
 12. Updating the State
 13. Passing Events Arguments
 
-## Getting Started
+## Composing Components
 14. Composing Components
 15. Passing Data to Components
 16. Passing Children to Components
+17. Raising and Handling Events

@@ -10,7 +10,6 @@ class Counter extends Component {
   render() {
     return (
       <div className="mb-2">
-        {this.props.children}
         <table>
           <tbody>
             <tr>
@@ -22,9 +21,15 @@ class Counter extends Component {
               <td>
                 <button
                   onClick={() => this.handleIncrement()}
-                  className="btn btn-secondary"
+                  className="btn btn-secondary mr-2"
                 >
                   Increment
+                </button>
+                <button
+                  onClick={this.props.onDelete}
+                  className="btn btn-danger"
+                >
+                  Delete
                 </button>
               </td>
             </tr>
