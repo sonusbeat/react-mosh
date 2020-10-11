@@ -3,16 +3,17 @@ import Counter from "./counter";
 
 class Counters extends Component {
   state = {
-      counters: [
-          { id: 1, value: 2 },
-          { id: 2, value: 3 },
-          { id: 3, value: 0 },
-          { id: 4, value: 0 },
-      ]
+    counters: [
+      { id: 1, value: 2 },
+      { id: 2, value: 3 },
+      { id: 3, value: 0 },
+      { id: 4, value: 1 },
+    ],
   };
 
-  handleDelete = () => {
-    console.log('Handle delete has been called !');
+  handleDelete = counterId => {
+    const counters = this.state.counters.filter(c => c.id !== counterId);
+    this.setState({ counters });
   };
 
   render() {
@@ -22,8 +23,7 @@ class Counters extends Component {
           <Counter
             key={counter.id}
             onDelete={this.handleDelete}
-            value={counter.value}
-            selected
+            counter={counter}
           />
         ))}
       </div>

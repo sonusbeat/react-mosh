@@ -21,3 +21,4 @@
 15. Passing Data to Components
 16. Passing Children to Components
 17. Raising and Handling Events
+18. Updating the state
