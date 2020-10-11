@@ -22,3 +22,4 @@
 16. Passing Children to Components
 17. Raising and Handling Events
 18. Updating the state
+19. Single Source of Truth
