@@ -10,6 +10,7 @@ class Counter extends Component {
   render() {
     return (
       <div className="mb-2">
+        {this.props.children}
         <table>
           <tbody>
             <tr>
