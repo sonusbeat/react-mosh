@@ -15,3 +15,6 @@
 11. Bind Event Handlers
 12. Updating the State
 13. Passing Events Arguments
+
+## Getting Started
+14. Composing Components
