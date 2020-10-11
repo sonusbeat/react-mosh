@@ -35,7 +35,7 @@ class Counters extends Component {
 
   render() {
     return (
-      <div className="container">
+      <React.Fragment>
         <button onClick={this.handleReset} className="btn btn-primary m-2">
           Reset
         </button>
@@ -48,7 +48,7 @@ class Counters extends Component {
             onIncrement={this.handleIncrement}
           />
         ))}
-      </div>
+      </React.Fragment>
     );
   }
 }
