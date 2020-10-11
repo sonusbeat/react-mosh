@@ -25,3 +25,4 @@
 19. Single Source of Truth
 20. Removing the local state
 21. Multiple Components in Sync
+22. Lifting the State Up
